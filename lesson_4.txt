@@ -1,0 +1,11 @@
+// plotting the current market price
+
+//@version = 5
+
+indicator("Plotting current price", overlay = false)
+
+src = input(close, "price right now")
+
+price = request.security(syminfo.tickerid, timeframe.period, src)
+
+plot(price)
