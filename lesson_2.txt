@@ -2,7 +2,10 @@
 
 //@version = 5
 
-indicator("plot sma of BTC")
+indicator("plot sma of BTC", overlay=true)
+
+// By adding in overlay=True into the indicator declaration, we can plot our data directly into the main charting window as opposed to the data window.
+// source: https://algotrading101.com/learn/pine-script-tradingview-guide/
 
 price_btc = request.security("BTCUSDT","1", close)
 sma_btc = ta.sma(price_btc, 20) // 20 period simple moving average
