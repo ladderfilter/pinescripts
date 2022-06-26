@@ -1,0 +1,27 @@
+// request price of different coins and plot them 
+
+//@version = 5
+indicator("prices of different coins")
+
+// in order to request price, we used the resquest.security() function
+
+//@version = 5
+indicator("prices of different coins")
+
+// in order to request price, we used the resquest.security() function
+
+price_aave = request.security("AAVEUSDT", "1", close)
+plot(price_aave, color = color.red)
+
+price_ltc = request.security("LTCUSDT", "1", close)
+plot(price_ltc, color = color.blue)
+
+
+// adding a third plot
+
+// scaling down btc so that all can be seen in the same range in the panel
+
+scaling_factor = 325 // factor chosen by trial and error
+
+price_btc = request.security("BTCUSDT","1", close)/scaling_factor
+plot(price_btc, color = color.black)
