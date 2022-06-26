@@ -1,0 +1,16 @@
+// This is what the most basic pine script looks like
+// This is the script you see when you open tradingview
+
+// This is how you write a comment
+
+
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © akgk92
+
+//@version=5
+indicator("My script")
+plot(close)
+
+
+// the name of the indicator is "My script"
+// close = last price of whatever chart is open
