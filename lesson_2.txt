@@ -1,0 +1,8 @@
+// get moving average of BTC
+
+//@version = 5
+
+price_btc = request.security("BTCUSDT","1", close)
+sma_btc = ta.sma(price_btc, 20) // 20 period simple moving average
+
+plot(sma_btc)
