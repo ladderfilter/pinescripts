@@ -1,0 +1,13 @@
+// Get and plot RSI value of BTC
+
+//@version = 5
+
+indicator("RSI of BTC", overlay = false)
+// overlay = false, because i want the RSI data in a separate panel and not overlaid on the chart
+
+
+price_btc = request.security("BTCUSDT","1", close)
+
+rsi = ta.rsi(price_btc, 10)
+
+plot(rsi)
