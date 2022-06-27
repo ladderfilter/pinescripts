@@ -1,0 +1,20 @@
+// lets buy and sell
+
+//@version = 5
+
+strategy("Moving Average Cross strategy", overlay=true)
+
+shortSMA = ta.sma(close, 10)
+longSMA = ta.sma(close, 30)
+
+rsi = ta.rsi(close, 14)
+
+// specify crossover conditions
+longCondition = ta.crossover(shortSMA, longSMA)
+shortCondition = ta.crossover(shortSMA, longSMA)
+
+if (longCondition)
+    strategy.entry("long", strategy.long, 1,when = rsi > 40)
+    
+if (shortCondition)
+    strategy.entry("short", strategy.short, 1, when= rsi < 60)
