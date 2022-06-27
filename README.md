@@ -1,6 +1,4 @@
-# pinescripts
-
-## My experiments with pinescripts~
+# My experiments with pinescripts~
 
 Tradingview.com developed a programming language called "pinescript" to build and backtest strategies and indicators.
 
