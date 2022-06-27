@@ -1,8 +1,9 @@
 # pinescripts
-My experiments with pinescripts
+
+## My experiments with pinescripts~
 
 
-Summary of lessons:
+### Summary of lessons:
 
 Lesson 0: gives a the most basic intro to what a pinescript looks like
 
