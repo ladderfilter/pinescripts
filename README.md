@@ -2,6 +2,10 @@
 
 ## My experiments with pinescripts~
 
+Tradingview.com developed a programming language called "pinescript" to build and backtest strategies and indicators.
+
+All the files shared in this repo are text files. In order to run and test them, copy and paste them into the Pinescript Editor on the tradingview.com
+
 
 ### Summary of lessons:
 
